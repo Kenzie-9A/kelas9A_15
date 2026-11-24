@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Perkalian</title>
-    <style>
-    table{
-        border-collapse: collapse;
-        width: 100%;
-        white-space: nowrap;
-    }
-    th, td{
-        padding: 10px;
-        border-bottom: 1px solid #cbd5e1;
-        text-align: left;
-    }
-
-    tr:nth-child(even){
-        background-color: #f1f5f9;
-    }
-    tr:hover{
-        background-color: #fef08a;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 <body>
-<div style="overflow-x: auto;">
-    <table>
-        <tr style="background-color: #0284c7; color: white;">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+
+
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Daftar Tugas &#9662;</a>
+                <div class="dropdown-content">
+                    <a href="biodata.html">Tugas Biodata</a>
+                    <a href="list.html">Tugas List</a>
+                    <a href="table.html" class="active">Tugas Table</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="wadah-utama">
+        <h1>halaman beranda</h1>
+        <div style="overflow-x: auto;">
             <th>Dikali</th>
             <th>x1</th>
             <th>x2</th>
@@ -171,6 +167,7 @@
             <th>100</th>
         </tr>
     </table>
+        </div>
 </div>
 </body>
 </html>
